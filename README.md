@@ -11,7 +11,7 @@ FluentDOM-YAML-Dipper
 Adds support for YAML to FluentDOM. It adds a loader and a serializer. It uses the
 [Dipper](https://github.com/secondparty/dipper) library.
 
-NOTE: At the moment a [fork of Dipper](https://github.com/FluentDOM/dipper is used.
+NOTE: At the moment a [fork of Dipper](https://github.com/FluentDOM/dipper) is used.
 
 This plugin needs FluentDOM 5.2.1 aka the current development version.
 
