@@ -1,0 +1,103 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "12984f0202df3141a01c25fb46b92a2f",
+    "packages": [
+        {
+            "name": "fluentdom/fluentdom",
+            "version": "5.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluentDOM/FluentDOM.git",
+                "reference": "a3a5bc66d2e338791efa4ad723ce03ca46cb336f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FluentDOM/FluentDOM/zipball/a3a5bc66d2e338791efa4ad723ce03ca46cb336f",
+                "reference": "a3a5bc66d2e338791efa4ad723ce03ca46cb336f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "suggest": {
+                "carica/phpcss": "Allows to use css selectors with FluentDOM::QueryCss().",
+                "symfony/css-selector": "Allows to use css selectors with FluentDOM::QueryCss()."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/FluentDOM.php"
+                ],
+                "psr-4": {
+                    "FluentDOM\\": "src/FluentDOM"
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FluentDOM Contributors",
+                    "homepage": "https://github.com/FluentDOM/FluentDOM/contributors"
+                }
+            ],
+            "description": "A fluent api for the php dom extension.",
+            "homepage": "http://fluentdom.org",
+            "keywords": [
+                "dom",
+                "jquery",
+                "xml"
+            ],
+            "time": "2015-02-05 17:47:23"
+        },
+        {
+            "name": "secondparty/dipper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluentDOM/dipper.git",
+                "reference": "4b7f605aa107f58b9ec9f635077416a7b0830672"
+            },
+            "suggest": {
+                "ext-syck": "YAML parsing extension for PHP"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "secondparty\\Dipper\\": "."
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fred LeBlanc",
+                    "email": "fred@fredhq.com"
+                }
+            ],
+            "description": "Fast parser for the more commonly-used subset of YAML’s v1.0 and v1.2",
+            "homepage": "https://github.com/secondparty/dipper",
+            "keywords": [
+                "parser",
+                "yaml"
+            ],
+            "time": "2015-02-05 16:22:10"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "secondparty/dipper": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
