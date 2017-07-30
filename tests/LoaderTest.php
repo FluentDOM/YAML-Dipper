@@ -1,12 +1,14 @@
 <?php
 namespace FluentDOM\YAML\Dipper {
 
-  require_once(__DIR__.'/../vendor/autoload.php');
+  use PHPUnit\Framework\TestCase;
 
-  class LoaderTest extends \PHPUnit_Framework_TestCase {
+  require_once __DIR__.'/../vendor/autoload.php';
+
+  class LoaderTest extends TestCase {
 
     /**
-     * @covers FluentDOM\YAML\Dipper\Loader
+     * @covers \FluentDOM\YAML\Dipper\Loader
      */
     public function testSupportsExpectingFalse() {
       $loader = new Loader();
@@ -14,7 +16,7 @@ namespace FluentDOM\YAML\Dipper {
     }
 
     /**
-     * @covers FluentDOM\YAML\Dipper\Loader
+     * @covers \FluentDOM\YAML\Dipper\Loader
      */
     public function testLoadReturnsImportedDocument() {
       $yaml =
@@ -42,7 +44,7 @@ namespace FluentDOM\YAML\Dipper {
     }
 
     /**
-     * @covers FluentDOM\YAML\Dipper\Loader
+     * @covers \FluentDOM\YAML\Dipper\Loader
      */
     public function testLoadReturnsNullFormInvalidSource() {
       $loader = new Loader();

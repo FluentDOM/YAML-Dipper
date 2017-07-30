@@ -1,31 +1,31 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "12984f0202df3141a01c25fb46b92a2f",
+    "content-hash": "fd2c3c20ffd21ca8c33cb8f62fd0b071",
     "packages": [
         {
             "name": "fluentdom/fluentdom",
-            "version": "5.2.1",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FluentDOM/FluentDOM.git",
-                "reference": "a3a5bc66d2e338791efa4ad723ce03ca46cb336f"
+                "reference": "32063e121ebbb0bd2fdf21a273a8e0184aba59e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FluentDOM/FluentDOM/zipball/a3a5bc66d2e338791efa4ad723ce03ca46cb336f",
-                "reference": "a3a5bc66d2e338791efa4ad723ce03ca46cb336f",
+                "url": "https://api.github.com/repos/FluentDOM/FluentDOM/zipball/32063e121ebbb0bd2fdf21a273a8e0184aba59e7",
+                "reference": "32063e121ebbb0bd2fdf21a273a8e0184aba59e7",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "ext-dom": "*",
+                "php": ">=5.6.0"
             },
             "suggest": {
-                "carica/phpcss": "Allows to use css selectors with FluentDOM::QueryCss().",
-                "symfony/css-selector": "Allows to use css selectors with FluentDOM::QueryCss()."
+                "fluentdom/css-selector": "Allows to use css selectors."
             },
             "type": "library",
             "autoload": {
@@ -36,7 +36,7 @@
                     "FluentDOM\\": "src/FluentDOM"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -49,19 +49,29 @@
             "description": "A fluent api for the php dom extension.",
             "homepage": "http://fluentdom.org",
             "keywords": [
+                "Xpath",
                 "dom",
                 "jquery",
                 "xml"
             ],
-            "time": "2015-02-05 17:47:23"
+            "time": "2017-07-29T17:49:41+00:00"
         },
         {
             "name": "secondparty/dipper",
-            "version": "dev-master",
+            "version": "dev-support-stdclass",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FluentDOM/dipper.git",
-                "reference": "4b7f605aa107f58b9ec9f635077416a7b0830672"
+                "reference": "1a12be1847bf7fd8008fe393d5045040a0b413a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FluentDOM/dipper/zipball/1a12be1847bf7fd8008fe393d5045040a0b413a2",
+                "reference": "1a12be1847bf7fd8008fe393d5045040a0b413a2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
             },
             "suggest": {
                 "ext-syck": "YAML parsing extension for PHP"
@@ -78,16 +88,19 @@
             "authors": [
                 {
                     "name": "Fred LeBlanc",
-                    "email": "fred@fredhq.com"
+                    "email": "fred@secondparty.com"
                 }
             ],
-            "description": "Fast parser for the more commonly-used subset of YAML’s v1.0 and v1.2",
+            "description": "A fast YAML parser that parses for the more commonly-used subset of YAML’s v1.0 and v1.2 specs.",
             "homepage": "https://github.com/secondparty/dipper",
             "keywords": [
                 "parser",
                 "yaml"
             ],
-            "time": "2015-02-05 16:22:10"
+            "support": {
+                "source": "https://github.com/FluentDOM/dipper/tree/support-stdclass"
+            },
+            "time": "2016-12-28 12:09:53"
         }
     ],
     "packages-dev": [],
@@ -99,5 +112,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "5.6"
+    }
 }
