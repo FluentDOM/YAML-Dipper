@@ -2,14 +2,16 @@ FluentDOM-YAML-Dipper
 =====================
 
 [![License](https://poser.pugx.org/fluentdom/yaml-dipper/license.svg)](http://www.opensource.org/licenses/mit-license.php)
-[![Build Status](https://travis-ci.org/FluentDOM/YAML-Dipper.svg?branch=master)](https://travis-ci.org/FluentDOM/HTML5)
-[![Total Downloads](https://poser.pugx.org/fluentdom/yaml-dipper/downloads.svg)](https://packagist.org/packages/fluentdom/fluentdom)
-[![Latest Stable Version](https://poser.pugx.org/fluentdom/yaml-dipper/v/stable.svg)](https://packagist.org/packages/fluentdom/fluentdom)
-[![Latest Unstable Version](https://poser.pugx.org/fluentdom/yaml-dipper/v/unstable.svg)](https://packagist.org/packages/fluentdom/fluentdom)
+[![Build Status](https://travis-ci.org/FluentDOM/YAML-Dipper.svg?branch=master)](https://travis-ci.org/FluentDOM/YAML-Dipper)
+[![Total Downloads](https://poser.pugx.org/fluentdom/yaml-dipper/downloads.svg)](https://packagist.org/packages/fluentdom/yaml-dipper)
+[![Latest Stable Version](https://poser.pugx.org/fluentdom/yaml-dipper/v/stable.svg)](https://packagist.org/packages/fluentdom/yaml-dipper)
+[![Latest Unstable Version](https://poser.pugx.org/fluentdom/yaml-dipper/v/unstable.svg)](https://packagist.org/packages/fluentdom/yaml-dipper)
 
 
 Adds support for YAML to FluentDOM. It adds a loader and a serializer. It uses the
 [Dipper](https://github.com/secondparty/dipper) library.
+
+NOTE: At the moment a [fork of Dipper](https://github.com/FluentDOM/dipper) is used.
 
 This plugin needs FluentDOM 5.2.1 aka the current development version.
 
